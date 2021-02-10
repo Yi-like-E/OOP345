@@ -1,0 +1,11 @@
+1.	the reason for specializing the operator+=() member function.
+	The specialization is an exception to a template definition of a function. In this workshop, I use specialization in PairSummable module. Because I have one operator+= in this module and it is used for adding value. But I also need an operator+= for adding strings, thus, I need to build a specialization to tell compiler using it when I need to add string.
+2.	why we don't need to specialize the initial value for the summation (see that the value is different when we add numbers versus when we add strings).
+	Because the initial value type can be either string or number, thus we need specialization to add it for both cases.
+3.	the reason for defining the class variable outside the class definition.
+	Because a static variable is a global variable. If we define it inside the class, each time we create an object, the value of the static variable will be assigned a value, which is not the purpose of a static global variable does. Thus, we assigned the static variable’s value outside of class.
+4.	answers to the other questions in these specifications.
+i)	Explain in the reflection why we do not split a module into *.h and *.cpp like you did in the previous workshops.
+	Because we only define template in the header file, not in cpp file.
+ii)	Explain in the reflection what = initial in the prototype means.
+	= initial is a default argument in the prototype, if there is no value assigned in this parameter, the constructor will use the default argument as its value.
