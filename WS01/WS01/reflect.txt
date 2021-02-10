@@ -1,0 +1,10 @@
+1.	the difference between internal and external linkage citing examples from your code.
+a)	explanation: The internal linkage refers to the variable that only in the scope of a file scope, we are defining an internal linkage by adding word static. And the external linkage refers to the variable that in the scope of a global scope, it is accessible through the whole program, we are defining an external linkage by adding word extern.
+b)	Example: 
+I use Internal linkage in display () function, static int counter = 0; which can help me make counter be accessible in the whole function scope.
+I define an external linkage in header file first: extern unsigned int g_sysClock; Then define it in the event.cpp file unsigned int g_sysClock; and next it is accessible in main file for (::g_sysClock = 0u; ::g_sysClock < secInDay; ++::g_sysClock).
+2.	what are static variables and how are they useful in your solution.
+a)	Static variables can last the entire lifetime of the program, we can use it when we wants to use this variable in the whole function scope. For example, in this workshop, I use it to define variable counter. Then I can use counter to count how many times the events had been created.
+3.	the changes that you made in upgrading your Event class.
+a)	I made my program to be available to accept any length or description, before there is only 128 words. Thus, I make an dynamically memory by using 
+m_desc = new char[strlen(address) + 1];
