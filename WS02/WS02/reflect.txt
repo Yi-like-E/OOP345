@@ -1,0 +1,17 @@
+Q: the reason for the significant time difference between the copy and move operations.
+A: In this workshop, I use both copy and move operations. The main difference between these two is, copy operation needs me to create a temporary dynamically allocated memory string to receive the copy then copy this temporary string to the destination. However, by using the move operation, I don’t need to create a temporary string to store, I can just use lvalue equal to rvalue to accomplish the move operation. The move operation is much more efficient and easier way when we need to copy something in our code.
+Example of using copy operation in my code:
+m_counter = obj.m_counter;
+                                               delete[] m_str;
+                                               m_str = new string[m_counter];
+                                               for (int i = 0; i < m_counter; i++)
+                                               {
+                                                               m_str[i] = obj.m_str[i];
+                                               }
+Example of using move operation in my code:
+
+                                               delete[] m_str;
+                                               m_str = obj.m_str;
+                                               m_counter = obj.m_counter;
+                                               obj.m_counter = 0;
+                                               obj.m_str = nullptr;
