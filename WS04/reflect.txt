@@ -1,0 +1,4 @@
+1.	the difference between the implementations of a composition and an aggregation.
+a.	A composition is a has-a relationship between classes. It implements complete ownership. And the aggregation is a composition that does not manage the creation or destruction of the objects that it uses. The mainly difference I understand is, in compositions, the composer object is responsible for destroying its component objects before its own destruction, but in aggregation, its component will not be destroyed, the component can either still alive itself or with object.
+2.	the difference between the implementations of move and copy functions in a composition and an aggregation.
+a.	the main difference is, in the composition, the copy and move responsible for destroying its resources, but in the aggregation, the copy and move functions are used for create and destory the pointer, not the resources.
