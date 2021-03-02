@@ -1,0 +1,8 @@
+1.	the difference between the implementations/utilizations of a functor and a lambda expression. When is appropriate to use each one?
+a.	The difference is, the lambda doesn’t require a separate class, but the functor is required, therefore, lambda is easier to use.
+2.	the constructor for SpellChecker generates an exception in certain conditions. How would you change your code to achieve the same result, but without exceptions (both on the constructor and on the client-side)? Compare the two solutions.
+a.	I assume I can use if-else condition to check does user enter the correct filename or not. But by using generates an exception to check would be better way.
+3.	the classes Movie and Book contain almost identical logic in loading data from the file. How would you redesign the classes in order not to duplicate that logic?
+a.	We could make a base class, then make two inheritance class book and movies, to avoid duplicating the logic. In this workshop, I didn’t use it.
+4.	the classes Movie and Book are instantiated from the main() function using a custom constructor, but they also contain a default constructor. Is the default constructor necessary? Could you remove it? Justify your answer.
+a.	Yes, I think the default constructor is necessary. We need to make a default constructor avoid any error in function. Such as accepting parameters. It will affect our program if we don’t write it. But, if we assign a blank value to a member variable of a class, then we don’t need to write a default constructor.
