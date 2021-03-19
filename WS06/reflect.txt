@@ -1,0 +1,11 @@
+1.	Why do you need to deallocate the dynamically allocated memory in your vector?
+
+Because of by using deallocate the dynamically allocated memory, we can modify the size of our vector.
+
+2.	When building an object from the input file, different things can go wrong: the record represents an unknown type of vehicle, or record contains invalid data. How can the function loadData() detect what went wrong? Can you think at another solution than the one you have implemented?
+
+In the function loadData(), I use try catch to handle the exception from the car module. Which means each times the program read and create instance from the file, it will analyze car data first in car module, and if there is any errors, it will transfer to loadData() function. Instead of doing try catch in loadData() in the main file, I also can read file from main file directly, and write a function to evaluate the data in the Car module.
+
+3.	In this workshop you had to use std::list<sdds::Vehicle*> and std::vector<sdds::Vehicle*> to store a collection of vehicles as pointers. Could you have used std::list<sdds::Vehicle> and std::vector<sdds::Vehicle> instead? Justify your answer!
+
+No, it cant be written in this way. Because inside the container, it must be the type of data, however the Vehicle is not a type, it is class’s name. The pointer of Vehicle is the data type of Vehicle.
