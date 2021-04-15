@@ -1,0 +1,6 @@
+1.	why was necessary to use binary files in this workshop and how did you use them
+a.	compare to the txt file, using the binary file will be more efficient because the binary file uses less memory. The program could run faster.
+2.	why would be important to bind a function to its arguments, and how was it useful in this workshop.
+a.	Bind function acts as a converter, it converts a complex function into a simple function. The first arg of bind function is the function’s name, and the rest arg is the parameter of the used function. The benefit of using bind is it can make these parameters to be alternated.
+3.	the advantages of using multiple threads, and how did you accomplished multi-threading in this workshop
+a.	The advantage of using multiple threads is, it can make the programmer easier and faster. Because when we using multiple threads, we split a process into multiple threads, then we use join to lock them. It could split the function and make them more light and make them run faster.

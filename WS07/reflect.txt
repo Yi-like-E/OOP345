@@ -1,0 +1,9 @@
+1.	list all the STL functions that you have used in this workshop; explain your reasoning for choosing each one and not another.
+a.	In this workshop, I used for_each, begin() and end() to create a loop because it can easily let me mark the beginning position and the end position of a container when we need to loop it.
+b.	I used the sort function to sort containers based on the title, length, album of songs collection container. It is an easier way when I need to sort, otherwise, I need to write tons of codes, such as bubble sort.
+c.	I used any_of to find out the correct collection by searching the artist’s name
+2.	present the advantages of using STL algorithms vs. implementing the functionality by yourself using loops.
+a.	The biggest advantage of using STL algorithms is it will help programmers save a lot of time and lots of code when programmer coding.
+3.	the function that sorts the collection of songs receives as a parameter the field name to use; this can create errors if the client specifies an invalid field (or misspells it). How would you redesign that function to prevent the client to specify an invalid string, allowing any error to be detected by the compiler?
+a.	In my sort function, besides this three conditions, I also create a throw exception, if the user misspells the parameter, it will return an error message "your input cannot be identified".
+

@@ -1,0 +1,4 @@
+1.	the advantage that smart pointer syntax provides. Use example from your code to support your explanation.
+a.	The biggest advantage of using smart pointer is, we don’t need to delete pointer or release memory when we use it. In my code, by comparing my mergeRaw function and mergeSmart function, we can see. When I use mergeRaw to copy pointer, I need to create a dynamic allocated memory by writing new and delete when I finish. However, in my mergeSmart, I don’t need to allocated memory and I don’t need to release memory when I finish it.
+2.	the difference between raw and smart pointer syntax in your solution.
+a.	A smart pointer can manage the resource automatically, when using raw pointer, I have to create it and release it manually.
